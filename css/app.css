@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  width: 1440px;
+  height: 100vh;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+span {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sidebar {
+  max-width: 280px;
+  width: 280px;
+  height: 100vh;
+  background: #FFFFFF;
+  position: fixed;
+  overflow-x: hidden;
+  left: 0;
+  top: 0;
+  box-shadow: 0px 0px 20px rgba(89, 102, 122, 0.08);
+}
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  gap: 90px;
+  align-items: center;
+  height: 80px;
+}
+
+.menu {
+  width: 100%;
+  height: calc(100vh - 80px);
+  background: #F2F2F4;
+}
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contract {
+  position: absolute;
+  width: 240px;
+  height: 44px;
+  left: 20px;
+  top: 106px;
+  display: flex;
+  align-items: center;
+  background: #00833E;
+  border-radius: 5px;
+}
+.contract-flex {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 0 8px;
+}
+.contract-flex .menu-text {
+  font-weight: normal;
+  line-height: 19px;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.menu-content {
+  position: absolute;
+  width: 240px;
+  max-width: 240px;
+  height: 318px;
+  left: 22px;
+  top: 183px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 16px;
+}
+.menu-content li.outside {
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  width: 240px;
+  height: 50px;
+}
+.menu-content li.outside a.outside {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-content li.outside a.outside span:first-child {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.menu-content li.outside a.outside span:first-child span:last-child {
+  color: #2C405A;
+  font-size: 14px;
+  letter-spacing: 0.05rem;
+  font-weight: 400;
+}
+.menu-content li:nth-child(2) > ul {
+  display: flex;
+}
+.menu-content li.outside:hover {
+  background: #EDF3F0;
+}
+
+.modulequy {
+  transform: rotate(90deg);
+}
+
+/*# sourceMappingURL=app.css.map */
