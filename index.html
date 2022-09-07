@@ -12,35 +12,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
     <!--    Add Css-->
     <link rel="stylesheet" href="./css/app.css">
+
     <title>PGD - HO</title>
 </head>
 <body>
-<div class="app">
+<div id="app">
     <div class="home">
         <div class="main-menu">
-            <div class="sidebar">
-                <div class="sidebar-content">
-                    <!--                        logo-header-sidebar-->
-                    <div class="logo">
-                        <img srcset="./images/logo.png 4x" alt="">
-                        <img srcset="./images/icon-expand.png 4x" alt="" class="expand-close">
-                    </div>
+            <div class="sidebar-page">
+                <div class="sidebar">
+                    <div class="sidebar-content">
+                        <!--                        logo-header-sidebar-->
+                        <div class="logo">
+                            <img srcset="./images/logo.png 4x" alt="">
+                            <img srcset="./images/icon-expand.png 4x" alt="" class="right">
+                        </div>
 
-                    <!--                            menu-list-sidebar-->
-                    <div class="menu">
-                        <ul class="menu-list">
-                            <li class="contract">
-                                <a href="" class="contract-flex">
+                        <!--                            menu-list-sidebar-->
+                        <div class="menu">
+                            <ul class="menu-list">
+                                <li class="background-contract">
+                                    <a href="" class="">
                                         <span class="icon">
                                             <img srcset="images/icon-taohopdong.png 4x" alt="">
                                         </span>
-                                    <span class="menu-text">Tạo hợp đồng</span>
-                                </a>
-                            </li>
-                            <div class="menu-content">
+                                        <span class="menu-text">Tạo hợp đồng</span>
+                                    </a>
+                                </li>
                                 <li class="outside">
-                                    <a href="" class="outside">
-                                        <span>
+                                    <a href="" class="">
+                                        <span class="div-menu-content">
                                             <span class="icon">
                                             <img srcset="./images/icon-dash.png 4x" alt="">
                                         </span>
@@ -50,8 +51,8 @@
                                     </a>
                                 </li>
                                 <li class="outside">
-                                    <a href="" class="outside">
-                                       <span>
+                                    <a href="" class="is-active">
+                                       <span class="div-menu-content">
                                             <span class="icon">
                                             <img srcset="./images/module-icn.png 4x" alt="">
                                         </span>
@@ -63,19 +64,17 @@
                                     </a>
                                 </li>
                                 <li class="outside">
-                                   <div>
-                                       <a href="" class="active is-expand outside">
-                                        <span>
+                                    <a href="" class="active is-expand ">
+                                        <span class="div-menu-content">
                                             <span class="icon">
                                             <img srcset="./images/icon-hopdong.png 4x" alt="">
                                         </span>
                                         <span class="menu-text">Module Quỹ</span>
                                      </span>
-                                           <span class="icon-right modulequy">
+                                        <span class="icon-right modulequy">
                                              <img srcset="./images/icon-right-sidebar.png 4x" alt="">
                                         </span>
-                                       </a>
-                                   </div>
+                                    </a>
                                     <ul>
                                         <li>
                                             <a href="">
@@ -98,8 +97,8 @@
                                     </ul>
                                 </li>
                                 <li class="outside">
-                                    <a href="" class="outside">
-                                       <span>
+                                    <a href="" class="is-active">
+                                       <span class="div-menu-content">
                                             <span class="icon">
                                             <img srcset="./images/lienket-icn.png 4x" alt="">
                                         </span>
@@ -110,8 +109,8 @@
                                         </span>
                                     </a>
                                 </li>
-                            </div>
-                        </ul>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -119,8 +118,287 @@
         <!--            sidebar-menu-->
 
         <div class="container">
-            <div class="header"></div>
-            <div class="data"></div>
+            <header class="header">
+                <div class="location-info">
+                    <span class="icon">
+                        <img srcset="./images/location.png 4x" alt="">
+                    </span>
+                    <div>HN01DT - F88 01 Đại Từ</div>
+                </div>
+                <div class="user-info">
+                    <div class="search">
+                        <span class="icon text-search">
+                            <img srcset="./images/Search.png 4x" alt="">
+                        </span>
+                    </div>
+                    <div class="notification">
+                        <span class="icon">
+                            <img srcset="./images/thongbao.png 4x" alt="">
+                        </span>
+                    </div>
+                    <div class="profile">
+                        <div class="navbar-item has-dropdown">
+                            <a href="" class="navbar-link">
+                                <div class="user-profile">
+                                    <div class="avatar" style="background-color: #FDB719">DP</div>
+                                    <div class="info">
+                                        <div>Đỗ Khắc Phong</div>
+                                        <p>Chuyên viên phát triển hệ thống</p>
+                                    </div>
+                                    <span>
+                                     <img srcset="./images/icon-right-sidebar.png 4x" alt="">
+                                    </span>
+                                </div>
+
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="content">
+                <div class="header-bar">
+                    <div class="lef-header">
+                        <img srcset="./images/icon-right-sidebar.png 4x" alt="">
+                        <span>
+                                    <p>chuyển quỹ nội bộ</p>
+                                </span>
+                    </div>
+                    <div class="right-header">
+                                <span>
+                                    <img srcset="./images/icon-taohopdong.png 4x" alt="">
+                                </span>
+                        <p>Chuyển quỹ nội bộ</p>
+                    </div>
+                </div>
+                <div class="main-content">
+                    <div class="detail-content">
+                        <div class="filter">
+<!--                            <div class="time-picker"></div>-->
+<!--                            <div class="select-status"></div>-->
+<!--                            <div class="select-form"></div>-->
+<!--                            <div class="select-banktransfer"></div>-->
+<!--                            <div class="select-receive"></div>-->
+<!--                            <div class="transaction"></div>-->
+                            <div>
+                                <ul>
+                                    <li>
+                                    <span>
+                                        <p>Từ Ngày đến ngày</p>
+                                    </span>
+                                        <span class="calendar">
+                                        <img  srcset="./images/Calendar.png 4x" alt="">
+                                    </span>
+                                    </li>
+                                    <li>
+                                    <span>
+                                        <p>Trạng thái</p>
+                                    </span>
+                                        <span>
+                                        <img srcset="./images/icon-right-sidebar.png 4x" alt="">
+                                    </span>
+                                    </li>
+                                    <li>
+                                    <span>
+                                        <p>Hình Thức</p>
+                                    </span>
+                                        <span>
+                                        <img srcset="./images/icon-right-sidebar.png 4x" alt="">
+                                    </span>
+                                    </li>
+                                    <li>
+                                    <span>
+                                        <p>Ngân hàng chuyển</p>
+                                    </span>
+                                        <span>
+                                        <img srcset="./images/icon-right-sidebar.png 4x" alt="">
+                                    </span>
+                                    </li>
+                                    <li>
+                                    <span>
+                                        <p>Ngân hàng nhận</p>
+                                    </span>
+                                        <span>
+                                        <img srcset="./images/icon-right-sidebar.png 4x" alt="">
+                                    </span>
+                                    </li>
+                                    <li>
+                                    <span>
+                                        <p>PGD nhận</p>
+                                    </span>
+                                        <span>
+                                        <img srcset="./images/icon-right-sidebar.png 4x" alt="">
+                                    </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="paging">
+                            <span>Hiển thị <b>20</b> trêm tổng số <b>37</b> bản ghi</span>
+                            <div>
+                                <span>
+                                    <img srcset="./images/ex.png 4x" alt="">
+                                    <p>Xuất Excel</p>
+                                </span>
+                                <span>
+                                    <button>
+                                        <img srcset="./images/Vector.png 4x" alt="">
+                                    </button>
+                                    <button>
+                                        <img srcset="./images/vector-right.png 4x" alt="">
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="header-table">
+                            <div class="order">#</div>
+                            <div class="col">
+                                <div class="columns">
+                                    <div class="column-2">Ngày</div>
+                                    <div class="column-3">Người tạo</div>
+                                    <div class="column-3">Bên nhận</div>
+                                    <div class="column-3">Xác nhận</div>
+                                    <div class="column-2">Số tiền</div>
+                                    <div class="column-4">Hình thức</div>
+                                    <div class="column-4">Ghi chú</div>
+                                    <div class="column-1">VA CODE</div>
+                                    <div class="column-4">TT</div>
+                                    <div class="column-4"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-table">
+                            <div class="item-table">
+                                <div class="order">
+                                    <div>1</div>
+                                </div>
+                                <div class="col">
+                                    <div class="columns">
+                                        <div class="column-2">
+                                            <div>22/07/2021</div>
+                                            <div>08:15</div>
+                                        </div>
+                                        <div class="column-3">Nguyễn Văn Sáng</div>
+                                        <div class="column-3">
+                                            <div>Nguyễn Văn A</div>
+                                            <div>Tên PGD nhận quỹ</div>
+                                        </div>
+                                        <div class="column-3">Nguyễn Văn A</div>
+                                        <div class="column-2">50.000.000</div>
+                                        <div class="column-4">
+                                            <div>Ngân hàng > Ngân hàng</div>
+                                            <div>BIDV > BIDV</div>
+                                        </div>
+                                        <div class="column-4">
+                                            <div>DCC/HN62HD/2012/204</div>
+                                            <div>Trần Thị Minh Hiền..</div>
+                                        </div>
+                                        <div class="column-1"></div>
+                                        <div class="column-4 icon-status-finisher">
+                                               <span class="icon-status">
+                                                   <img srcset="./images/icon-HT.png 4x" alt="">
+                                               </span>
+                                            <p>Hoàn thành</p>
+                                        </div>
+                                        <div class="column-4">
+                                            <img srcset="./images/icon-export.png 4x" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-table">
+                                <div class="order">
+                                    <div>1</div>
+                                </div>
+                                <div class="col">
+                                    <div class="columns">
+                                        <div class="column-2">
+                                            <div>22/07/2021</div>
+                                            <div>08:15</div>
+                                        </div>
+                                        <div class="column-3">Nguyễn Văn Sáng</div>
+                                        <div class="column-3">
+                                            <div>Nguyễn Văn A</div>
+                                            <div>Tên PGD nhận quỹ</div>
+                                        </div>
+                                        <div class="column-3">Nguyễn Văn A</div>
+                                        <div class="column-2">50.000.000</div>
+                                        <div class="column-4">
+                                            <div>Ngân hàng > Ngân hàng</div>
+                                            <div>BIDV > BIDV</div>
+                                        </div>
+                                        <div class="column-4">
+                                            <div>DCC/HN62HD/2012/204</div>
+                                            <div>Trần Thị Minh Hiền..</div>
+                                        </div>
+                                        <div class="column-1"></div>
+                                        <div class="column-4 icon-status-cancel">
+                                               <span class="icon-status">
+                                                   <img srcset="./images/icon-DH.png 4x" alt="">
+                                               </span>
+                                            <p>Đã Hủy</p>
+                                        </div>
+                                        <div class="column-4">
+                                            <img srcset="./images/icon-export.png 4x" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-table">
+                                <div class="order">
+                                    <div>1</div>
+                                </div>
+                                <div class="col">
+                                    <div class="columns">
+                                        <div class="column-2">
+                                            <div>22/07/2021</div>
+                                            <div>08:15</div>
+                                        </div>
+                                        <div class="column-3">Nguyễn Văn Sáng</div>
+                                        <div class="column-3">
+                                            <div>Nguyễn Văn A</div>
+                                            <div>Tên PGD nhận quỹ</div>
+                                        </div>
+                                        <div class="column-3">Nguyễn Văn A</div>
+                                        <div class="column-2">50.000.000</div>
+                                        <div class="column-4">
+                                            <div>Ngân hàng > Ngân hàng</div>
+                                            <div>BIDV > BIDV</div>
+                                        </div>
+                                        <div class="column-4">
+                                            <div>DCC/HN62HD/2012/204</div>
+                                            <div>Trần Thị Minh Hiền..</div>
+                                        </div>
+                                        <div class="column-1"></div>
+                                        <div class="column-4 icon-status-await">
+                                            <img srcset="./images/icon-C.png 4x" alt="">
+                                               <span class="icon-status">
+                                               </span>
+                                            <p>Chờ xác nhận</p>
+                                        </div>
+                                        <div class="column-4">
+                                            <img srcset="./images/icon-export.png 4x" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="paging">
+                            <span>Hiển thị <b>20</b> trêm tổng số <b>37</b> bản ghi</span>
+                            <div>
+                                <span>
+                                    <button>
+                                        <img srcset="./images/Vector.png 4x" alt="">
+                                    </button>
+                                    <button>
+                                        <img srcset="./images/vector-right.png 4x" alt="">
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
